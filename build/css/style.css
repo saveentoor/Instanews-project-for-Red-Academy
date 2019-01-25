@@ -1,0 +1,18 @@
+html {
+  font-size: 12px; }
+
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  text-align: center; }
+
+h1 {
+  font-size: 4rem;
+  font-family: sans-serif; }

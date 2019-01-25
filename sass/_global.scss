@@ -1,0 +1,21 @@
+html {
+  font-size: 12px;
+}
+
+body {
+  align-items: center;
+  background: black;
+  color: white;
+  display: flex;
+  height: 100vh;
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+
+// //ex:
+// @include desktop {
+//   background: red;
+// }

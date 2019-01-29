@@ -1,43 +1,43 @@
 html {
-      font-style: ;
-      font-size: 16px;
-          @include tablet {
-            // font-size: 20px;
-            width: 50%;
-          }
-          @include desktop {
-            width: 100%;
-            font-style: ;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  @include tablet {
+    // font-size: 20px;
+    width: 50%;
+  }
+  @include desktop {
+    width: 100%;
+    font-style: ;
   }
 }
 
 body {
-      font-style: ;
-      align-items: center;
-      background: black;
-      color: white;
-      // display: flex;
-      height: 100vh;
-      text-align: center;
-      flex-wrap: wrap;
-      font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+  background: black;
+  color: white;
+  // display: flex;
+  height: 100vh;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 16px;
 
-            @include desktop {
-              text-align: left;
-            }
-            @include tablet {
-              text-align: center;
+  @include desktop {
+    text-align: left;
+  }
+  @include tablet {
+    text-align: center;
   }
 }
 
 .loader {
-    background: center no-repeat;
-    position: fixed;
-    position: absolute;
-    width: 80%;
-    height: 25%;
-    left: 10%;
-    z-index: 20;
+  background: center no-repeat;
+  position: fixed;
+  position: absolute;
+  width: 80%;
+  height: 25%;
+  left: 10%;
+  z-index: 20;
 }
 
 // .p {
@@ -45,12 +45,10 @@ body {
 //   display: flex;
 //   flex-wrap: wrap;
 
-  @include desktop {
-      flex-wrap: wrap;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-  }
+@include desktop {
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
 }
 
 .news {
@@ -61,15 +59,15 @@ body {
   // height: 400px;
 
   article {
-      flex-basis: 100%;
-      position: relative;
-      @include tablet {
-        flex-basis: 50%;
-      }
-      @include desktop {
-        flex-basis: 25%;
-        height: auto;
-      }
+    flex-basis: 100%;
+    position: relative;
+    @include tablet {
+      flex-basis: 50%;
+    }
+    @include desktop {
+      flex-basis: 25%;
+      height: auto;
+    }
 
     img {
       background-position: cover;

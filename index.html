@@ -1,41 +1,70 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <title>Project 2</title>
     <link rel="stylesheet" href="build/css/style.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
+
+
   <body>
+
     <header>
-      <img src="assets/images/nyt-logo.svg">
-      </header>
+      <div class="logo">
+        <img src="assets/images/nyt-logo.svg" alt="INSTANEWS logo"/>
+      </div>
 
-    <section class="section">
-      <form class="search-form" action="#" method="post"></form>
+      <form class="search-form" action="#" method="post">
+
     
-    <p>Choose a selection</p>
-    <select name="section" id="selection">
-      <option value="">Selection</option>
-      <option value="arts">Arts</option>
-      <option value="business">Business</option>
-      <option value="sports">Sports</option>
-      <option value="technology">Technology</option>
-      <option value="fashion">Fashion</option>
+          <p>Choose a section</p>
+         
+          <select name="button" id="button">
+             
+            <option value="">Selection</option>
+            <option value="arts">Arts</option>
+            <option value="business">Business</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+            <option value="fashion">Fashion</option>
+      
+          </select>
+        </form>
 
-    </select>
-  </form>
+    </header>
+
+
+<div class="loader">
+  <img src="assets/images/ajax-loader.gif" width="25" height="25" alt="loader"/>
+ </div>
+
+
+   
+
+
   
-<section>
-  <div class="image">
-    <!--load loading img here insert in js-->
-  </div>
-  <div class="news">
+ <section>
+
+  <div class="news">  
 <!-- insert news info though js using api-->
+
+  <!-- <article>
+    <a href="#">
+      <img src="#">
+      <h2>TITLE</h2>
+    </a>
+  </article> -->
+
+
+
   </div>
 </section>
 
-  </body>
+  
 
 
   <footer>
@@ -43,10 +72,12 @@
     <footer class="site footer">
       <p>&copy;Copyrights 2016 INSTANEWS</p>
 
-  </footer>
+  </footer> 
 
 <!--JavaScript files-->
-  <script src="http://code.jquery.com/jquery-3.3.1.min,js"></script>
-  <script src="build/build.js/script.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="build/js/script.min.js"></script>
 
-</html>
+
+</body>
+</html> 

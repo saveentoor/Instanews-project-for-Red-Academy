@@ -1,0 +1,10 @@
+//tablet
+@media screen and (min-width: 600px) {
+  width: 50%;
+  
+}
+//decktop
+@media screen and (min-width: 1000px) {
+  width: 100%;
+  flex-direction: row;
+}

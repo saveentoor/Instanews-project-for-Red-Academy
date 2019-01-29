@@ -57,3 +57,14 @@ gulp.task("scripts", function() {
     .pipe(rename({ extname: ".min.js" }))
     .pipe(gulp.dest("./build/js"));
 });
+
+// -----------Lint---------- //
+
+gulp.task("lint", function() {
+  return gulp
+    .src(["js/*.js"])
+    .pipe(prettyError())
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
+});

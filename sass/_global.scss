@@ -62,7 +62,9 @@ body {
     flex-basis: 100%;
     position: relative;
     @include tablet {
-      flex-basis: 50%;
+      p {
+        width: 50%;
+      }
     }
     @include desktop {
       flex-basis: 25%;

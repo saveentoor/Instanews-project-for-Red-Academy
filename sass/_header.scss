@@ -1,36 +1,39 @@
 header {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   display: block;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   text-align: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
 
-body {
-  align-items: center;
-  background: black;
-  color: white;
-  // display: flex;
-  height: 100vh;
-  text-align: center;
-  flex-wrap: wrap;
-  font-size: 16px;
+  @include desktop {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
 }
-
-h1 {
-  font-size: 4rem;
-  font-family: sans-serif;
+.small-header {
+  padding-right: 10px;
 }
 
 h2 {
-  font-size: 14px;
+  font-size: 15px;
   color: white;
   text-decoration: none;
   position: absolute;
   text-align: left;
-  bottom: 5px;
+  bottom: -12px;
+  padding-left: 6%;
+  @include desktop {
+    align-content: center;
+    padding-right: 10%;
+  }
 }

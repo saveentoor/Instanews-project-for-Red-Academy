@@ -1,4 +1,5 @@
 footer {
+  font-style: ;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -6,4 +7,8 @@ footer {
   text-align: center;
   color: #c2c2c2;
   font-size: 16px;
+
+  @include desktop {
+    text-align: left;
+  }
 }

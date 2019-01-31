@@ -1,13 +1,18 @@
 html {
   font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
+
+
   @include tablet {
     // font-size: 20px;
     width: 50%;
   }
+
   @include desktop {
     width: 100%;
-    font-style: ;
+    font-style: normal;
   }
 }
 
@@ -15,16 +20,19 @@ body {
   font-family: "Open Sans", sans-serif;
   align-items: center;
   background: black;
-  color: white;
+  color: red;
   // display: flex;
   height: 100vh;
   text-align: center;
   flex-wrap: wrap;
   font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
 
   @include desktop {
     text-align: left;
   }
+
   @include tablet {
     text-align: center;
   }
@@ -61,11 +69,13 @@ body {
   article {
     flex-basis: 100%;
     position: relative;
+
     @include tablet {
       p {
         width: 50%;
       }
     }
+
     @include desktop {
       flex-basis: 25%;
       height: auto;

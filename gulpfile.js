@@ -68,3 +68,13 @@ gulp.task("lint", function() {
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });
+
+const babel = require("gulp-babel");
+const input = "src/index.js";
+const output = "dist";
+gulp.task("babel", () => {
+  return gulp
+    .src(input)
+    .pipe(babel())
+    .pipe(gulp.dest(output));
+});

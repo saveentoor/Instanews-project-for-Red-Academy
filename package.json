@@ -9,9 +9,12 @@
   "author": "saveen",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-prettyerror": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",

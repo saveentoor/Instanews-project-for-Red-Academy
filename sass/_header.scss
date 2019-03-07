@@ -21,13 +21,14 @@ header {
 
 h2 {
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 1rem;
   color: white;
   text-decoration: none;
   position: absolute;
   text-align: left;
   bottom: -12px;
   padding-left: 6%;
+  background: rgba(0,0,0,.6);
   @include desktop {
     align-content: center;
     padding-right: 10%;

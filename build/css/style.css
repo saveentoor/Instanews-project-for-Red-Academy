@@ -125,9 +125,11 @@ h2 {
   text-decoration: none;
   position: absolute;
   text-align: left;
-  bottom: -12px;
+  bottom: -13px;
   padding-left: 6%;
-  background: rgba(0, 0, 0, 0.6); }
+  background: rgba(0, 0, 0, 0.6);
+  padding: .5rem;
+  width: 100%; }
   @media (min-width: 1000px) {
     h2 {
       -ms-flex-line-pack: center;

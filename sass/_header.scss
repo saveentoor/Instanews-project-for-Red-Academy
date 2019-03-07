@@ -26,9 +26,11 @@ h2 {
   text-decoration: none;
   position: absolute;
   text-align: left;
-  bottom: -12px;
+  bottom: -13px;
   padding-left: 6%;
   background: rgba(0,0,0,.6);
+  padding: .5rem;
+  width: 100%;
   @include desktop {
     align-content: center;
     padding-right: 10%;

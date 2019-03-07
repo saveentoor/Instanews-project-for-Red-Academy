@@ -2,15 +2,11 @@ html {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   @include tablet {
-    // font-size: 20px;
-    width: 50%;
   }
   @include desktop {
     width: 100%;
-
   }
 }
-
 body {
   font-family: "Open Sans", sans-serif;
   align-items: center;
@@ -52,9 +48,9 @@ body {
     position: relative;
     height: 300px;
     @include tablet {
-      p {
+      
         width: 50%;
-      }
+      
     }
     @include desktop {
       width: 25%;

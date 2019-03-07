@@ -18,9 +18,6 @@
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 16px; }
-  @media (min-width: 600px) {
-    html {
-      width: 50%; } }
   @media (min-width: 1000px) {
     html {
       width: 100%; } }
@@ -70,7 +67,7 @@ body {
     position: relative;
     height: 300px; }
     @media (min-width: 600px) {
-      .news article p {
+      .news article {
         width: 50%; } }
     @media (min-width: 1000px) {
       .news article {
@@ -111,7 +108,18 @@ header {
               flex-direction: column;
       -webkit-box-pack: left;
           -ms-flex-pack: left;
-              justify-content: left; } }
+              justify-content: left; }
+      header .logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
 
 .small-header {
   padding-top: 0; }

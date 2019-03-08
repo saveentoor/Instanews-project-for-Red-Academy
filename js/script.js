@@ -8,6 +8,7 @@
 //6) Hide the loader again
 
 $(document).ready(function() {
+  $(".loader").hide();
   $("#button").on("change", function(event) {
     event.preventDefault();
 
@@ -27,8 +28,6 @@ $(document).ready(function() {
       datatype: "JSON"
     })
       .done(function(data) {
-        //=is an object! //slide:20
-
         $body.empty();
         console.log(data);
         let filtered = data.results.filter(function(value) {

@@ -19,8 +19,8 @@ body {
 
   @include desktop {
     text-align: left;
-    max-width: 1500px;
-    margin: auto;
+    max-width: 1600px;
+    margin: 0 auto ;
   }
   @include tablet {
     text-align: center;
@@ -54,11 +54,9 @@ body {
     }
     @include desktop {
       width: 25%;
-      //height: auto;
     }
 
     img {
-      // background-position: cover;
       object-fit: cover;
       position: relative;
       margin-left: auto;

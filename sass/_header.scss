@@ -21,7 +21,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 220px;
+    // margin-left: 220px;
     
   }
 }
@@ -46,6 +46,8 @@ header {
     height: 50%;
     align-content: center;
     @include tablet {
+
+      align-content: left;
     }
     @include desktop {
 

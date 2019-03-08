@@ -155,8 +155,7 @@ header {
               align-items: center;
       -webkit-box-pack: start;
           -ms-flex-pack: start;
-              justify-content: flex-start;
-      margin-left: 220px; } }
+              justify-content: flex-start; } }
 
 .small-header {
   height: 235px;
@@ -197,6 +196,10 @@ header {
       height: 50%;
       -ms-flex-line-pack: center;
           align-content: center; }
+      @media (min-width: 600px) {
+        .small-header .logo img {
+          -ms-flex-line-pack: left;
+              align-content: left; } }
 
 footer {
   font-family: "Open Sans", sans-serif;

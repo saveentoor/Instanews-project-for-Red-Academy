@@ -26,8 +26,15 @@ body {
   @include tablet {
     text-align: center;
   }
-  form {
-    padding-top: 7%;
+  // form {
+  //   // padding-top: 7%;
+  // }
+}
+
+.logo{
+  img{
+    height: 100%;
+  
   }
 }
 .loader {
@@ -74,5 +81,22 @@ body {
       max-height: auto;
       flex-wrap: wrap;
     }
+  }
+}
+h2 {
+  font-family: "Open Sans";
+  line-height: 1.5rem;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  text-align: center;
+  bottom: -22px;
+  padding: 10px;
+  // height: 15;
+  background: rgba(0,0,0,.6);
+  width: 100%;
+  @include desktop {
+    align-content: center;
   }
 }

@@ -40,8 +40,9 @@ body {
   @media (min-width: 600px) {
     body {
       text-align: center; } }
-  body form {
-    padding-top: 7%; }
+
+.logo img {
+  height: 100%; }
 
 .loader {
   background: center no-repeat;
@@ -90,6 +91,23 @@ body {
       max-height: auto;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+
+h2 {
+  font-family: "Open Sans";
+  line-height: 1.5rem;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  text-align: center;
+  bottom: -22px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%; }
+  @media (min-width: 1000px) {
+    h2 {
+      -ms-flex-line-pack: center;
+          align-content: center; } }
 
 header {
   display: -webkit-box;
@@ -141,35 +159,44 @@ header {
       margin-left: 220px; } }
 
 .small-header {
-  height: 135px;
-  -webkit-box-orient: horizontal;
+  height: 235px;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-h2 {
-  font-family: "Open Sans";
-  line-height: 1.5rem;
-  font-size: 14px;
-  color: white;
-  text-decoration: none;
-  position: absolute;
-  text-align: center;
-  bottom: -22px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  bottom: -12;
-  width: 100%; }
+  @media (min-width: 600px) {
+    .small-header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap; } }
   @media (min-width: 1000px) {
-    h2 {
+    .small-header {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap; } }
+  .small-header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .small-header .logo img {
+      width: 50%;
+      height: 50%;
       -ms-flex-line-pack: center;
-          align-content: center; } }
+          align-content: center; }
 
 footer {
   font-family: "Open Sans", sans-serif;

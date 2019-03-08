@@ -1,26 +1,28 @@
 {
   "extends": "eslint:recommended",
+  "parser": "babel-eslint",
   "rules": {
-    "rules": {
-        "no-alert": 1,
-        "camelcase": 1,
-        "curly": 1,
-        "eqeqeq": 1,
-        "no-console": 1,
-        "guard-for-in": 1,
-        "no-empty": 1,
-        "no-param-reassign": 1,
-        "no-unused-vars": 1,
-        "quotes": [ 1, "single"]
+    "no-alert": 0,
+    "no-bitwise": 0,
+    "camelcase": 1,
+    "curly": 1,
+    "eqeqeq": 1,
+    "no-console": 1,
+    "guard-for-in": 1,
+    "no-empty": 1,
+    "no-param-reassign": 1,
+    "no-unused-vars": 1,
+    "quotes": [1, "single"]
   },
   "globals": {
-    "globals": {
-        "jQuery": false,
-        "$": false
-    
+    "jQuery": false,
+    "$": false
   },
   "env": {
-    "browser": true
-    }
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
   }
-
+}

@@ -2,17 +2,35 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 15%;
+  align-items: center;
+  transition: 1s;
+  height: 80vh;
 
+  select{
+    font-size: 1.1rem;
+  }
+  
   @include desktop {
-    text-align: left;
     display: flex;
-    flex-direction: column;
+    text-align: left;
+    flex-direction: row;
     justify-content: left;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 220px;
+    
   }
 }
 .small-header {
-  padding-right: 10px;
+ height: 135px;
+ flex-flow: row nowrap;
+ justify-content: flex-start;
+ align-items: center;
+
 }
 
 h2 {
@@ -21,11 +39,12 @@ h2 {
   color: white;
   text-decoration: none;
   position: absolute;
-  text-align: left;
-  bottom: -12px;
-  padding-left: 6%;
+  text-align: center;
+  bottom: -22px;
+  padding: 10px;
+  height: 15;
   @include desktop {
     align-content: center;
-    padding-right: 10%;
   }
 }
+

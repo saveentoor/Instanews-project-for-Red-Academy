@@ -6,6 +6,7 @@ const terser = require("gulp-terser");
 const prettyError = require("gulp-prettyerror");
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
+const eslint = require("gulp-eslint");
 
 //--------------------CS--------------------//
 
@@ -70,8 +71,8 @@ gulp.task("lint", function() {
 });
 
 const babel = require("gulp-babel");
-const input = "src/index.js";
-const output = "dist";
+const input = "./js/*.js";
+const output = "./js";
 gulp.task("babel", () => {
   return gulp
     .src(input)

@@ -1,3 +1,5 @@
+"use strict";
+
 //1a) Listen for the select menu to change (watching value)
 //1b) If the select value is an empty string, do nothing and return from this function immediately... can do with if statment//
 //1c) Show a loader and clear out old stories
@@ -6,18 +8,15 @@
 //4) Append that stuff to the DOM
 //5) If unsuccessful, append and show a helpful error message to the user in the UI
 //6) Hide the loader again
-
 $(document).ready(function() {
+  $(".loader").hide();
   $("#button").on("change", function(event) {
     event.preventDefault();
-
-    const selection = $(this).val();
+    let selection = $(this).val(); //make var const or let
     console.log(selection);
-    const $body = $(".news");
+    let $body = $(".news");
     $("header").addClass("small-header");
-
     $(".loader").show();
-
     $.ajax({
       method: "GET",
       url:
@@ -27,30 +26,23 @@ $(document).ready(function() {
       datatype: "JSON"
     })
       .done(function(data) {
-        //=is an object! //slide:20
-
         $body.empty();
         console.log(data);
-        let filtered = data.results.filter(function(value) {
+        const filtered = data.results.filter(function(value) { 
           return value.multimedia.length;
-        });
-
-        const articles = filtered.slice(0, 12);
-
+        }); 
+        let articles = filtered.slice(0, 12); 
         $.each(articles, function(key, value) {
-          const img = '<img src="' + value.multimedia[4].url + '">';
-          const title = "<h2>" + value.title + "</h2>";
-          const openingA = '<a href= "' + value.url + '">';
-
+          let img = '<img src="' + value.multimedia[4].url + '">'; 
+          let title = "<h2>" + value.title + "</h2>"; 
+          let openingA = '<a href= "' + value.url + '">'; 
           $body.append("<article>" + openingA + img + title + "</a></article>");
         });
       })
-
       .fail(function() {
         $body.empty();
         $body.append("<p>Error, please try again.</p>");
       })
-
       .always(function() {
         $(".loader").hide();
         console.log("string");

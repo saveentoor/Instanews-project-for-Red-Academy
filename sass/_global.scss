@@ -2,10 +2,9 @@ html {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   @include tablet {
-    width: 50%;
+    // width: 50%;
   }
   @include desktop {
-    width: 100%;
     font-style: "Open Sans";
   }
 }
@@ -19,29 +18,32 @@ body {
   text-align: center;
   flex-wrap: wrap;
   font-size: 16px;
+ 
 
   @include desktop {
-    text-align: left;
+    text-align: center;
   }
   @include tablet {
     text-align: center;
   }
+  form {
+    padding-top: 7%;
+  }
 }
-
 .loader {
   background: center no-repeat;
   position: fixed;
   position: absolute;
   width: 80%;
   height: 25%;
+  bottom: 80px;
   left: 10%;
   z-index: 20;
-}
 
-@include desktop {
-  flex-wrap: wrap;
-  flex-direction: row;
-  display: flex;
+  @include desktop {
+    padding-top: 50%;
+    
+}
 }
 
 .news {
@@ -53,13 +55,12 @@ body {
     flex-basis: 100%;
     position: relative;
     @include tablet {
-      p {
-        width: 50%;
-      }
+      flex-basis: 50%;
+      min-height: 100%;
     }
     @include desktop {
-      flex-basis: 25%;
-      height: auto;
+      max-width: 25%;
+      min-height: 100%;
     }
 
     img {
@@ -67,7 +68,9 @@ body {
       position: relative;
       margin-left: auto;
       margin-right: auto;
-      max-width: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      height: 300px;
       max-height: auto;
       flex-wrap: wrap;
     }

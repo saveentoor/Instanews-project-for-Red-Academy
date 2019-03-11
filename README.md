@@ -16,3 +16,7 @@ JSON
 API
 SASS
 CSS propprocessors
+
+### Screenshot
+
+![alt text](project-2/instanews-project-for-red-academy/screenshot.png)

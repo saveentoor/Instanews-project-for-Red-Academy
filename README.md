@@ -19,4 +19,4 @@ CSS propprocessors
 
 ### Screenshot
 
-![alt text](project-2/instanews-project-for-red-academy/screenshot.png)
+![alt text](project-2/screenshot.png)
